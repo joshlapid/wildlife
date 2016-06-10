@@ -1,0 +1,8 @@
+<h1>Wildlife Tracker</h1>
+<h2>Add a Species</h2>
+<%= flash[:notice] %>
+<form action="species/view" method="get">
+  <input type="text" name="species" required placeholder="Species"/>
+  <input type="submit" value="Add Species" />
+</form>
+<p><a href="species/view">View all species</a></p>

@@ -1,0 +1,747 @@
+
+
+Started GET "/" for ::1 at 2016-06-10 13:42:07 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "wild_life_tracker_development" does not exist
+):
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/learn/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/learn/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/learn/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/learn/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/learn/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.9ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 13:43:26 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 21ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for ::1 at 2016-06-10 13:43:30 -0700
+Processing by Rails::InfoController#properties as */*
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/templates/rails/info/properties.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 27.4ms | ActiveRecord: 0.9ms)
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSpecies (20160610214659)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (20.8ms)[0m  [1mCREATE TABLE "species" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160610214659"]]
+  [1m[36m (16.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'species'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-06-10 15:17:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 475ms (Views: 466.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 15:17:01 -0700
+
+
+Started GET "/species/view?species=Raccoon" for ::1 at 2016-06-10 15:17:08 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Raccoon"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSpecies Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "species" WHERE "species"."name" = 'Raccoon' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Raccoon"], ["created_at", "2016-06-10 22:17:08.397389"], ["updated_at", "2016-06-10 22:17:08.397389"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSpecies Load (0.3ms)[0m  SELECT "species".* FROM "species"
+  Rendered species/view.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 70ms (Views: 32.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/species/view?species=Elephant" for ::1 at 2016-06-10 15:17:20 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Elephant"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSpecies Exists (0.3ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Elephant' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Elephant"], ["created_at", "2016-06-10 22:17:20.340650"], ["updated_at", "2016-06-10 22:17:20.340650"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mSpecies Load (0.3ms)[0m  [1mSELECT "species".* FROM "species"[0m
+  Rendered species/view.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 29.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/species/view?species=Elephant" for ::1 at 2016-06-10 15:17:26 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Elephant"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSpecies Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "species" WHERE "species"."name" = 'Elephant' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 422 Unprocessable Entity in 14ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Name has already been taken):
+  app/controllers/species_controller.rb:9:in `view'
+
+
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.5ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.2ms)
+
+
+Started GET "/species/view?species=Giraffe" for ::1 at 2016-06-10 15:17:46 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Giraffe"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSpecies Exists (0.3ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Giraffe' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Giraffe"], ["created_at", "2016-06-10 22:17:46.043896"], ["updated_at", "2016-06-10 22:17:46.043896"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mSpecies Load (0.2ms)[0m  [1mSELECT "species".* FROM "species"[0m
+  Rendered species/view.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/species/view?species=raccOOn" for ::1 at 2016-06-10 15:17:57 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"raccOOn"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSpecies Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "species" WHERE "species"."name" = 'raccOOn' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "raccOOn"], ["created_at", "2016-06-10 22:17:57.157291"], ["updated_at", "2016-06-10 22:17:57.157291"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSpecies Load (0.2ms)[0m  SELECT "species".* FROM "species"
+  Rendered species/view.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 29.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:37:18 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 15:37:18 -0700
+
+
+Started GET "/species/view?species=Raccoon" for ::1 at 2016-06-10 15:37:26 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Raccoon"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "species" WHERE (name='Raccoon')[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:37:26 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/species/view?species=Cat" for ::1 at 2016-06-10 15:37:32 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Cat"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "species" WHERE (name='Cat')
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSpecies Exists (1.3ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Cat' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Cat"], ["created_at", "2016-06-10 22:37:32.113343"], ["updated_at", "2016-06-10 22:37:32.113343"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mSpecies Load (0.3ms)[0m  [1mSELECT "species".* FROM "species"[0m
+  Rendered species/view.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 16.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:37:38 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 15:37:38 -0700
+
+
+Started GET "/species/view?species=Dog" for ::1 at 2016-06-10 15:37:55 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Dog"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "species" WHERE (name='Dog')
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Dog' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Dog"], ["created_at", "2016-06-10 22:37:55.204822"], ["updated_at", "2016-06-10 22:37:55.204822"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mSpecies Load (0.3ms)[0m  [1mSELECT "species".* FROM "species"[0m
+  Rendered species/view.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:38:01 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 15:38:01 -0700
+
+
+Started GET "/species/view?species=Dog" for ::1 at 2016-06-10 15:38:05 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Dog"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "species" WHERE (name='Dog')
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:38:05 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:38:53 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 15:38:53 -0700
+
+
+Started GET "/species/view?species=DOG" for ::1 at 2016-06-10 15:38:59 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"DOG"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "species" WHERE (name='Dog')[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:38:59 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/species/view?species=CAPYBARA" for ::1 at 2016-06-10 15:39:10 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"CAPYBARA"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "species" WHERE (name='Capybara')
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:39:10.865903"], ["updated_at", "2016-06-10 22:39:10.865903"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mSpecies Load (0.3ms)[0m  [1mSELECT "species".* FROM "species"[0m
+  Rendered species/view.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 19.7ms | ActiveRecord: 2.3ms)
+  [1m[36mSpecies Load (0.3ms)[0m  [1mSELECT  "species".* FROM "species" WHERE "species"."name" = $1 LIMIT 1[0m  [["name", "raccOOn"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "species" WHERE "species"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mSpecies Load (0.3ms)[0m  [1mSELECT "species".* FROM "species"[0m
+
+
+Started GET "/species/view?species=CAPYBARA" for ::1 at 2016-06-10 15:46:08 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"CAPYBARA"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "species" WHERE (name='Capybara')
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:46:08 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 15:46:08 -0700
+
+
+Started GET "/species/view?species=Mouse" for ::1 at 2016-06-10 15:46:22 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"Mouse"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "species" WHERE (name='Mouse')[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSpecies Exists (1.6ms)[0m  [1mSELECT  1 AS one FROM "species" WHERE "species"."name" = 'Mouse' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Mouse"], ["created_at", "2016-06-10 22:46:22.063345"], ["updated_at", "2016-06-10 22:46:22.063345"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSpecies Load (0.2ms)[0m  SELECT "species".* FROM "species"
+  Rendered species/view.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 12.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/species/view.html" for ::1 at 2016-06-10 15:58:12 -0700
+Processing by SpeciesController#view as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:58:12 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 15:59:42 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 15:59:42 -0700
+
+
+Started GET "/species/view" for ::1 at 2016-06-10 15:59:50 -0700
+Processing by SpeciesController#view as HTML
+  Rendered species/view.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>All Species</h1>
+    2: <ul>
+    3:   <% @all_species.each do |species| %>
+    4:     <li><%= species.name %></li>
+    5:   <%end %>
+    6: </ul>
+  app/views/species/view.html.erb:3:in `_app_views_species_view_html_erb___1039295016379628649_70193581819780'
+  app/controllers/species_controller.rb:4:in `view'
+
+
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.7ms)
+
+
+Started GET "/species/view" for ::1 at 2016-06-10 16:00:29 -0700
+Processing by SpeciesController#view as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `species_name' for #<SpeciesController:0x007fae6b3be360>):
+  app/controllers/species_controller.rb:4:in `view'
+
+
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.3ms)
+
+
+Started GET "/species/view" for ::1 at 2016-06-10 16:00:31 -0700
+Processing by SpeciesController#view as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `species_name' for #<SpeciesController:0x007fae6fe895e8>):
+  app/controllers/species_controller.rb:4:in `view'
+
+
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.8ms)
+
+
+Started GET "/species/view" for ::1 at 2016-06-10 16:00:47 -0700
+Processing by SpeciesController#view as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `capitalize' for nil:NilClass):
+  app/controllers/species_controller.rb:4:in `view'
+
+
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.1ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.4ms)
+
+
+Started GET "/species/view" for ::1 at 2016-06-10 16:01:13 -0700
+Processing by SpeciesController#view as HTML
+  [1m[36mSpecies Load (0.3ms)[0m  [1mSELECT "species".* FROM "species"[0m
+  Rendered species/view.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 16:01:13 -0700
+
+
+Started GET "/species/view?species=++++++" for ::1 at 2016-06-10 16:02:22 -0700
+Processing by SpeciesController#view as HTML
+  Parameters: {"species"=>"      "}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 16:02:22 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-10 16:04:55 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 16:04:55 -0700
+
+
+Started GET "/" for ::1 at 2016-06-10 16:10:11 -0700
+Processing by TitleController#index as HTML
+  Rendered title/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/assets/title.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/assets/species.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/assets/title.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-10 16:10:11 -0700
+
+
+Started GET "/species/view" for ::1 at 2016-06-10 16:10:13 -0700
+Processing by SpeciesController#view as HTML
+  [1m[35mSpecies Load (0.3ms)[0m  SELECT "species".* FROM "species"
+  Rendered species/view.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 1.6ms)
